@@ -317,6 +317,7 @@ header {
     font-size: 1.75rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
 }
 
 #results 
@@ -324,15 +325,18 @@ header {
     color: var(--white);
     margin-bottom: 2rem;
     line-height: 1.6;
+    padding-left: 0.5rem;
 }
 
 .results-container {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    align-items: center;
+    align-items: flex-start;
 }
 
+
+        /* table */
 .results-table
 .bar-chart {
     flex: 1;
@@ -342,15 +346,17 @@ header {
 
 .results-table {
     flex: 1;
+    width: 100%;
 } 
 
 .bar-chart {
     flex: 1;
+    width: 100%;
 }
 
 .results-table h3,
 .bar-chart h3 {
-    align-items: auto;
+
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -358,13 +364,10 @@ header {
     line-height: 1;
 }
 
-        /* table */
-
 .results-table table {
     width: 100%;
     border-collapse: collapse;
-    background-color: var(--charcoal);
-
+    border-spacing: 0;
     overflow: hidden;
 }
 
@@ -375,6 +378,12 @@ header {
     text-align: center;
     font-weight: 600;
     font-size: 0.9rem;
+    border-top: 1px solid var(--charcoal);
+    border-bottom: 1px solid var(--charcoal);
+}
+
+.results-table th:last-child {
+    border-right: none;
 }
 
 .results-table td {
@@ -382,20 +391,34 @@ header {
     text-align: center;
     color: var(--white);
     font-size: 0.9rem;
-    border-bottom: 1px solid #444; 
+    border-top: 1px solid var(--charcoal);
+    border-bottom: 1px solid var(--charcoal); 
 }
 
-.results-table th {
-    padding: 0.75 1rem;
-    text-align: center;
-    color: var(--white);
-    font-size: 0.9rem;
-    border-bottom: 1px solid #444;
+.results-table td:last-child {
+    border-right: none;
+}
+                    /* profit chart col/row black & grey  */
+.results-table tbody tr:nth-child(odd) {
+    background-color: var(--black);
+}
+
+.results-table tbody tr:nth-child(even) {
+    background-color: var(--charcoal);
 }
 
 .results-table tr:last-child td {
     border-bottom: none;
 }
+
+
+
+
+
+
+
+
+
 
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
