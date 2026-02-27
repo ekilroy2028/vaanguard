@@ -208,7 +208,7 @@ header {
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
-#innovation-investment h1::before {
+#innovation-investment h2::before {
     content: "";
     position: absolute;
     left:-.5rem;
@@ -216,7 +216,7 @@ header {
     height: 3.75rem;
 }
 
-#innovation-investment h1 {
+#innovation-investment h2 {
     font-size: 2rem;
     font-weight: 700;
     color: var(--white);
@@ -250,7 +250,7 @@ header {
 #about {
     background-color: var(--white);
     color: var(--black);
-    padding: 3rem 0;
+    padding: 3rem 0 0;
 }
 
 
@@ -271,6 +271,7 @@ header {
     background-color: var(--white);
     color: var(--black);
     padding: 2rem 0 3rem;
+    margin-top: -1px;
 }
 
 
