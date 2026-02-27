@@ -412,14 +412,6 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -519,9 +511,9 @@ header {
 #contact textarea {
     width: 100%;
     padding: 0.65rem 0.75rem;
-    background-color: #ffffff;
+    background-color: var(--white);
     border: 4px solid var(--blue);
-    color: #000000;
+    color: var(--black);
     font-family: var(--font);
     font-size: 0.9rem;
     box-sizing: border-box;
@@ -558,6 +550,7 @@ header {
     border-radius: 10px;
 }
 
+                /* yeah I added a hover too make sure it works */
 #contact button[type="submit"]:hover {
     background-color: #0056b3;
 }
