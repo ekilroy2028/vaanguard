@@ -195,6 +195,15 @@ header {
     border-radius: 3px;
 }
 
+#contact header {
+    background-color: transparent;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none;
+    position: static;
+    padding-bottom: 0;
+}
+
 
 
             /* hero */
