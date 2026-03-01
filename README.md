@@ -1,4 +1,4 @@
-# vanguuard
+# vaanguard
  Innovation & Investment
 
 Link to website: https://github.com/ekilroy2028/vaanguard.git 
