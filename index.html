@@ -186,13 +186,13 @@
 
     <!-- navi hamburger menu open/close -->
     <script>
-        const navToggle = document.querySeletor('.nav-toggle');
-        const navMain = document.querySeletor('.main-nav ul');
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMain = document.querySelector('.main-nav ul');
 
         navToggle.addEventListener('click', function() {
             const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
             navToggle.setAttribute('aria-expanded', !isExpanded);
-            navMenu.classlist.toggle('nav-open');
+            navMenu.classList.toggle('nav-open');
         })
     </script>
 
