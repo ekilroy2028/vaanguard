@@ -16,10 +16,10 @@
         <nav id="main-nav" class="container" aria-label="Main Navigation">
             <h2 class="visually-hidden">Vaanguard</h2>
             <a href="#" class="logo" aria-label="Vaanguard home">
-                <img src="images/vaanguard-logo.svg" alt="Vaanguard logo" class="logo-img">Vaanguard</a>
+                <img src="images/vaanguard-logo.svg" alt="Vaanguard logo" class="logo-img">Vaanguard
             </a>
 
-            <button class="nav-toggle" aria-label="toggle navigation" aria-expanded="false">
+            <button type="button" class="nav-toggle" aria-label="toggle navigation" aria-expanded="false">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
@@ -129,13 +129,13 @@
 
                     <section class="bar-chart">
                         <h3>Growth</h3>
-                        <session id="bar-chart" role="img" aria-label="Bar chart showing abbual growth from 200 to 2024">
-                            <div class="bar" data-year="2020" style="--height:30%"></div>
-                            <div class="bar" data-year="2021" style="--height:50%"></div>
-                            <div class="bar" data-year="2022" style="--height:70%"></div>
-                            <div class="bar" data-year="2023" style="--height:85%"></div>
-                            <div class="bar" data-year="2024" style="--height:100%"></div>
-                        </session>
+                        <figure id="bar-chart" aria-label="Bar chart showing annual growth from 2020 to 2024">
+                            <span class="bar" data-year="2020"></span>
+                            <span class="bar" data-year="2021"></span>
+                            <span class="bar" data-year="2022"></span>
+                            <span class="bar" data-year="2023"></span>
+                            <span class="bar" data-year="2024"></span>
+                        </figure>
                     </section>
                 </aside>
             </section>
@@ -144,7 +144,7 @@
         <section id="contact">
             <header class="container">
                 <h2>Contact Us</h2>
-                <p>Want to take your business to the next level? Get in touch with our elite team today.</p> 
+                <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
             </header>
             <form class="container">
                 <span class="form-field">
@@ -171,7 +171,6 @@
                     <button type="submit">Submit</button>
                 </span>
             </form>
-
         </section>
 
     </main>
@@ -186,14 +185,14 @@
 
     <!-- navi hamburger menu open/close -->
     <script>
-        const navToggle = document.querySeletor('.nav-toggle');
-        const navMain = document.querySeletor('.main-nav ul');
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('#main-nav ul');
 
         navToggle.addEventListener('click', function() {
             const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
             navToggle.setAttribute('aria-expanded', !isExpanded);
-            navMenu.classlist.toggle('nav-open');
-        })
+            navMenu.classList.toggle('nav-open');
+        });
     </script>
 
 </body>
