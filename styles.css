@@ -143,6 +143,13 @@ header {
     width: 48px;
     height: 48px;
     display: block;
+    animation: logoFloat 5s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
 }
 
 #main-nav ul li a {
