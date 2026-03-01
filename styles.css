@@ -111,7 +111,7 @@ header {
     backdrop-filter: blur(8px);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 100;  
 }
 
 #main-nav {
@@ -249,6 +249,7 @@ header {
     color: var(--white);
     margin-bottom: 1rem;
     position: relative;
+    min-height: 1em;
 }
 
 #innovation-investment p {
@@ -319,6 +320,12 @@ header {
     color: var(--white);
     border-radius: 8px;
     padding: 1.5rem;
+    transition: transform 0.3s ease;
+} 
+
+.service-grid li:hover {
+    cursor: default;
+    transform: translateY(-6px);
 } 
 
 .service-grid h3 {

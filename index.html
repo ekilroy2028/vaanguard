@@ -16,7 +16,7 @@
         <nav id="main-nav" class="container" aria-label="Main Navigation">
             <h2 class="visually-hidden">Vaanguard</h2>
             <a href="#" class="logo" aria-label="Vaanguard home">
-                <img src="images/vaanguard-logo.svg" alt="Vaanguard logo" class="logo-img">Vaanguard</a>
+                <img src="images/vaanguard-logo.svg" alt="Vaanguard logo" class="logo-img">Vaanguard
             </a>
 
             <button class="nav-toggle" aria-label="toggle navigation" aria-expanded="false">
@@ -129,13 +129,13 @@
 
                     <section class="bar-chart">
                         <h3>Growth</h3>
-                        <session id="bar-chart" role="img" aria-label="Bar chart showing abbual growth from 200 to 2024">
+                        <section id="bar-chart" role="img" aria-label="Bar chart showing annual growth from 2020 to 2024">
                             <div class="bar" data-year="2020" style="--height:30%"></div>
                             <div class="bar" data-year="2021" style="--height:50%"></div>
                             <div class="bar" data-year="2022" style="--height:70%"></div>
                             <div class="bar" data-year="2023" style="--height:85%"></div>
                             <div class="bar" data-year="2024" style="--height:100%"></div>
-                        </session>
+                        </section>
                     </section>
                 </aside>
             </section>
@@ -149,19 +149,19 @@
             <form class="container">
                 <span class="form-field">
                     <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+                    <input type="text" id="full-name" name="full-name" required>
                 </span>
                 <span class="form-field">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <input type="email" id="email" name="email" required>
                 </span>
                 <span class="form-field">
                     <label for="company">Company Name</label>
-                    <input type="text" id="company" name="company" placeholder="Company Name" required>
+                    <input type="text" id="company" name="company" required>
                 </span>
                 <span class="form-field">
                     <label for="industry">Industry</label>
-                    <input type="text" id="industry" name="industry" placeholder="Industry" required>
+                    <input type="text" id="industry" name="industry" required>
                 </span>
                 <span class="form-field form-message">
                     <label for="message">How can we help you?</label>
@@ -187,7 +187,7 @@
     <!-- navi hamburger menu open/close -->
     <script>
         const navToggle = document.querySelector('.nav-toggle');
-        const navMain = document.querySelector('.main-nav ul');
+        const navMenu = document.querySelector('#main-nav ul');
 
         navToggle.addEventListener('click', function() {
             const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
