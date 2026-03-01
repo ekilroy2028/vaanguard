@@ -9,7 +9,7 @@ Link to Vanguard blocked Github pushes & files: https://drive.google.com/drive/f
 
  
 
-Please note: 
+Please note to grader & Prof. Bailey: 
 
 • I had trouble with this assignment when my GitHub repository was disabled by GitHub due to a trademark issue, despite my label of "Educational Purposes Only." I recreated the repository and attached a link to my work. This demonstrates I've been working on it all week.  
 
